@@ -30,5 +30,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY ./ros_entrypoint.sh /
 
 COPY ./99-arduino.rules /etc/udev/rules.d/
-COPY ./88-ttyacm.rules /etc/udev/rules.d/
+COPY ./00-teensy.rules /etc/udev/rules.d/
 
